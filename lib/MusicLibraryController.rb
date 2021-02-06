@@ -24,8 +24,8 @@ class MusicLibraryController
 
     case input
       when 'list songs'
-        Song.all.sort.each_with_index |s|
-          puts "#{index + 1} s"
+        Song.all.sort.each_with_index |s, i|
+          puts "#{i+1} #{s}"
     end
   end
 end
