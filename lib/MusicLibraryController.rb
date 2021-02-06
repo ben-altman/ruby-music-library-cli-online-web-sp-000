@@ -87,6 +87,5 @@ class MusicLibraryController
       song = Song.all.sort_by! {|a| a.name}[input-1]
       puts "Playing #{song.name} by #{song.artist.name}"
     end
-  #  puts "playing #{list_songs[input-1]}"
   end
 end
