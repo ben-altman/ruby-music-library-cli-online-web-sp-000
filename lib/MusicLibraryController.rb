@@ -83,7 +83,7 @@ class MusicLibraryController
   def play_song
     puts "Which song number would you like to play?"
     input = gets.strip
-    if song = list_songs[input-1]
+    if song = list_songs[input - 1]
       puts "on it"
     end
   #  puts "playing #{list_songs[input-1]}"
