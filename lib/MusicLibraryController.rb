@@ -66,5 +66,6 @@ class MusicLibraryController
       artist.songs.sort_by! {|song| song.name}.each_with_index {|s, i|
         puts "#{i+1}. #{s.name}"
       }
+    end
   end
 end
