@@ -6,6 +6,7 @@ class MusicLibraryController
   end
 
   def call
-
+    input = gets.strip
+    puts "Welcome to your music library!"
   end
 end
