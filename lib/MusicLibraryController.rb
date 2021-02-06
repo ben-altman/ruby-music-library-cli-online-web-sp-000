@@ -25,12 +25,12 @@ class MusicLibraryController
     case input
       when 'list songs'
         list_songs
-      
+
     end
   end
 
   def list_songs
-    Songs.all.sort.each_with_index {|s, i| 
+    Songs.all.sort.each_with_index {|s, i|
       puts "#{i=1}. s"
     }
   end
