@@ -21,5 +21,10 @@ class MusicLibraryController
     if input != 'exit'
       call
     end
+
+    case input
+      when 'list songs'
+        Song.all.sort.each_with_index |s, index|
+          puts "#{index + 1} s"
   end
 end
