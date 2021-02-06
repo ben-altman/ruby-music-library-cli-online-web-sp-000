@@ -26,5 +26,6 @@ class MusicLibraryController
       when 'list songs'
         Song.all.sort.each_with_index |s, index|
           puts "#{index + 1} s"
+    end
   end
 end
