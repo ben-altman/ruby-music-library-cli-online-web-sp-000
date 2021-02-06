@@ -55,4 +55,8 @@ class MusicLibraryController
       puts "#{i+1}. #{g.name}"
     }
   end
+
+  def list_songs_by_artist
+
+  end
 end
