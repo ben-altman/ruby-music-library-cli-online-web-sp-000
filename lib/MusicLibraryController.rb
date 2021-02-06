@@ -83,7 +83,7 @@ class MusicLibraryController
   def play_song
     puts "Which song number would you like to play?"
     input = gets.strip.to_i
-    if input >= 1 && input <= Songs.all.size
+    if input >= 1 && input <= Song.all.size
       song = Song.all.sort_by! {|a| a.name}[input-1]
       puts "on it"
     end
